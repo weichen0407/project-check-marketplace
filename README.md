@@ -1,4 +1,19 @@
 # Project Check Marketplace
 
-此目录用于分发「项目检查」的 Codex 客户端插件。当前包含 Marketplace 清单、插件清单及图标。
-云端 MCP 就绪后，在插件目录加入指向实际 HTTPS 地址的 `mcp.json`，并加入使用远程工具的 Skills，再验证安装与调用。
+「项目检查」GitHub 版提供研发降本、TRIZ 创新和 TRIZ 案例库。Codex 直接调用云端 MCP，用户无需安装 Python。
+
+## 安装
+
+确认本机已安装 Codex CLI，并已用 Git 登录有此私有仓库访问权限的 GitHub 账号。
+
+```bash
+codex plugin marketplace add weichen0407/project-check-marketplace && codex plugin add project-check@project-check-marketplace
+```
+
+安装后打开新的 Codex 聊天，选择 **Project Check · GitHub**，输入「用 TRIZ 案例库查询技术功效标准词」测试。
+
+## 更新
+
+```bash
+codex plugin marketplace upgrade project-check-marketplace && codex plugin add project-check@project-check-marketplace
+```

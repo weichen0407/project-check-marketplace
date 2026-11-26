@@ -1,18 +1,18 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "project-check",
-  "version": "0.11.0",
-  "description": "Distribution preview for the Project Check Codex plugin.",
+  "version": "0.11.1",
+  "description": "Connect Codex to Project Check cloud tools for R&D cost optimization, TRIZ innovation, and TRIZ case search.",
   "author": {
-    "name": "Local Development"
+    "name": "weichen0407"
   },
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Project Check",
-        "shortDescription": "Project Check distribution preview",
-        "longDescription": "The hosted MCP connection is pending.",
-        "developerName": "Local Development",
+        "displayName": "Project Check · GitHub",
+        "shortDescription": "Review engineering costs and explore TRIZ solutions",
+        "longDescription": "Use the cloud MCP tools for R&D cost optimization, TRIZ innovation, and searching the TRIZ Case Library.",
+        "developerName": "weichen0407",
         "category": "Productivity",
         "brandColor": "#2563EB",
         "composerIcon": "./assets/icon.svg",
