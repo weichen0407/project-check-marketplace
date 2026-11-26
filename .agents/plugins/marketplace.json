@@ -1,0 +1,20 @@
+{
+  "name": "project-check-marketplace",
+  "interface": {
+    "displayName": "Project Check"
+  },
+  "plugins": [
+    {
+      "name": "project-check",
+      "source": {
+        "source": "local",
+        "path": "./plugins/project-check"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

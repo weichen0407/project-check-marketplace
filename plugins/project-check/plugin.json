@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "project-check",
+  "version": "0.11.0",
+  "description": "Distribution preview for the Project Check Codex plugin.",
+  "author": {
+    "name": "Local Development"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Project Check",
+        "shortDescription": "Project Check distribution preview",
+        "longDescription": "The hosted MCP connection is pending.",
+        "developerName": "Local Development",
+        "category": "Productivity",
+        "brandColor": "#2563EB",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/logo.svg"
+      }
+    }
+  }
+}
