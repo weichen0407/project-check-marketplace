@@ -1,0 +1,4 @@
+interface:
+  display_name: "Technology Discovery"
+  short_description: "Find technology news and discuss product fit"
+  default_prompt: "Use $fetch-latest to find recent technologies that could improve my product."

@@ -2,16 +2,48 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
   "mcpServers": {
     "rd-cost": {
-      "type": "streamable-http",
-      "url": "https://stage-ai-fabric.zhihuiya.com/mcp/deepcost-apps?APP_ID=Patsnap"
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "${PLUGIN_ROOT}/scripts/run_mcp.py",
+        "--server",
+        "rd-cost",
+        "--upstream-url",
+        "https://stage-ai-fabric.zhihuiya.com/mcp/deepcost-apps?APP_ID=Patsnap"
+      ],
+      "cwd": "${PLUGIN_ROOT}",
+      "startup_timeout_sec": 180,
+      "tool_timeout_sec": 600
     },
     "triz": {
-      "type": "streamable-http",
-      "url": "https://stage-ai-fabric.zhihuiya.com/mcp/triz-solution-apps?APP_ID=Patsnap"
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "${PLUGIN_ROOT}/scripts/run_mcp.py",
+        "--server",
+        "triz",
+        "--upstream-url",
+        "https://stage-ai-fabric.zhihuiya.com/mcp/triz-solution-apps?APP_ID=Patsnap"
+      ],
+      "cwd": "${PLUGIN_ROOT}",
+      "startup_timeout_sec": 180,
+      "tool_timeout_sec": 600
     },
     "triz-case-library": {
       "type": "streamable-http",
       "url": "https://stage-ai-fabric.zhihuiya.com/mcp/patsnap-triz-case-library?APP_ID=Patsnap"
+    },
+    "fetch-latest": {
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "${PLUGIN_ROOT}/scripts/run_mcp.py",
+        "--server",
+        "fetch-latest"
+      ],
+      "cwd": "${PLUGIN_ROOT}",
+      "startup_timeout_sec": 180,
+      "tool_timeout_sec": 600
     }
   }
 }

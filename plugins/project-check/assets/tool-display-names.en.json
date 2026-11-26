@@ -1,0 +1,46 @@
+{
+  "rd-cost": {
+    "display_name": "R&D Cost Optimization",
+    "tools": {
+      "readme": "Workflow Guide",
+      "upload_file": "Upload Project Materials",
+      "map_component_costs": "System Cost Analysis",
+      "standardize_bom": "BOM Standardization",
+      "three_dimensional_cross_industry_benchmark": "Cross-Industry Cost Benchmarking",
+      "three_dimensional_extreme_subtraction": "Extreme Subtraction",
+      "three_dimensional_function_search": "Function Search",
+      "three_dimensional_system_architecture_reconstruction": "System Architecture Redesign",
+      "three_dimensional_material_selection": "Material Selection",
+      "three_dimensional_manufacturing_process_selection": "Manufacturing Process Selection",
+      "three_dimensional_fastening_process_selection": "Fastening Process Selection",
+      "triz_analyze_trimming": "Component Trimming Analysis",
+      "triz_retrieve_patents": "Trimming Patent Evidence Search",
+      "triz_generate_solutions": "Trimming Cost-Reduction Solution Generation",
+      "value_engineering": "Value Engineering",
+      "first_principles": "First-Principles Cost Reduction",
+      "evaluate_solutions": "Cost-Reduction Solution Evaluation",
+      "generate_report": "Cost-Reduction Report Generation",
+      "generate_solution_image": "Cost-Reduction Solution Image Generation"
+    }
+  },
+  "triz": {
+    "display_name": "TRIZ Innovation",
+    "tools": {
+      "readme": "Workflow Guide",
+      "analyze_components": "Component Function Analysis",
+      "analyze_causal_chain": "Causal Chain Analysis",
+      "search_solution_evidence": "Technical Evidence Search",
+      "generate_concept_solutions": "Concept Solution Generation",
+      "generate_solution_detail": "Solution Detail Generation",
+      "read_export_image": "Read Exported Solution Image",
+      "export_file": "Export Solution File"
+    }
+  },
+  "triz-case-library": {
+    "display_name": "TRIZ Case Library",
+    "tools": {
+      "search_triz_case": "TRIZ Case Search",
+      "list_triz_search_terms": "List Standard Case Search Terms"
+    }
+  }
+}

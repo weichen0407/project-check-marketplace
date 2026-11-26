@@ -47,7 +47,8 @@ Follow the [request language rules](../project-check/references/response-languag
 未返回专利标识、链接、图片或成本数据时，不自行补造成上游证据。
 
 案例库返回的是已有案例，不等于新方案生成、新颖性证明或不侵权结论。
-以服务返回的文本和结构化结果为准。
+目前没有 UI 资源，使用真实文本和结构化结果，不创建演示页面。后续若返回
+HTML，会经共享代理添加 Eureka 导航。
 
 用户要求基于案例继续创新时，转到[创新机会](../innovation-opportunities/SKILL.md)，
 把案例摘要、ID 和适用限制作为有来源的背景。案例的 `cases` 不能原样当作

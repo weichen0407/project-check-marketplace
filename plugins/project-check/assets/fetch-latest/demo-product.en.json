@@ -1,0 +1,9 @@
+{
+  "id": "air-fryer-demo",
+  "name": "Air fryer A (sample)",
+  "summary": "A fictional product for testing how a technology could apply. Create a profile with your own product specifications.",
+  "specifications": { "Capacity": "5 L", "Rated power": "1500 W", "Heating": "Top heating element and fan-driven hot air" },
+  "goals": ["Improve heating uniformity", "Reduce the need to turn food"],
+  "constraints": ["Keep the existing enclosure dimensions", "Assess structural and cost impacts first"],
+  "isDemo": true
+}

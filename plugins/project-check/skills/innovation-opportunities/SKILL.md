@@ -19,7 +19,7 @@ Follow the [request language rules](../project-check/references/response-languag
 以当前聊天中可见的方案、技术特征和目标为输入，保留用户已确认的事实与
 约束。无法确定要检查哪个方案时才先澄清，不索取已经可见的材料。
 
-使用 `triz` MCP。调用前说明场景、MCP 和工具；结束时汇总实际
+使用 `triz` MCP（ai-fabric 的 triz-solution-apps）。调用前说明场景、MCP 和工具；结束时汇总实际
 调用和失败项。出现网关或工具错误时报告受阻阶段，不自动回退到其他入口。
 
 用户明确要求已有案例、跨行业案例或科学效应参考时，先读取并遵循

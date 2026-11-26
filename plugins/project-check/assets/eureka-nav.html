@@ -1,0 +1,67 @@
+<!-- Shared Project Check navigation; upstream apps retain their own content. -->
+<style>
+  #project-check-eureka-nav{box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:12px 20px;background:#142d24;color:#fff;font:12px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;position:relative;z-index:10;flex-shrink:0}
+  #project-check-eureka-nav *{box-sizing:border-box}
+  #project-check-eureka-nav .pc-eureka-brand{display:inline-flex;align-items:center;gap:12px;padding:4px;border-radius:6px;color:#fff;text-decoration:none;cursor:pointer}
+  #project-check-eureka-nav .pc-eureka-brand:hover{background:#ffffff12}
+  #project-check-eureka-nav .pc-eureka-brand:focus-visible{outline:2px solid #a5f3b5;outline-offset:3px}
+  #project-check-eureka-nav .pc-eureka-brand[aria-busy="true"]{opacity:.65}
+  #project-check-eureka-nav img{display:block;width:95px;height:30px;object-fit:contain}
+  #project-check-eureka-nav svg{width:16px;height:16px;opacity:.7}
+  #project-check-eureka-nav .pc-eureka-label{display:flex;align-items:center;gap:8px;letter-spacing:.08em;color:#c4d7cb;white-space:nowrap}
+  #project-check-eureka-nav .pc-eureka-dot{width:6px;height:6px;border-radius:50%;background:#96f5a7}
+  #project-check-eureka-nav .pc-eureka-feedback{color:#ffd6bd;letter-spacing:normal;white-space:normal;max-width:220px}
+  #project-check-eureka-nav .pc-eureka-feedback:empty{display:none}
+  @media(max-width:480px){#project-check-eureka-nav{padding:10px 12px}#project-check-eureka-nav .pc-eureka-feedback{max-width:140px}}
+</style>
+<nav id="project-check-eureka-nav" aria-label="Eureka Project Check navigation">
+  <a class="pc-eureka-brand" href="https://eureka.patsnap.com/" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" aria-label="Eureka website (opens in a new tab)" title="Visit eureka.patsnap.com">
+    <img src="https://static-eureka.patsnap.com/ssr/23.2.0/_nuxt/eureka_white.8794a28f.svg" alt="Eureka" width="95" height="30" referrerpolicy="no-referrer">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+  </a>
+  <span class="pc-eureka-label"><span class="pc-eureka-feedback" role="status" aria-live="polite"></span><span class="pc-eureka-dot" aria-hidden="true"></span><span class="pc-eureka-name">Project Check</span></span>
+</nav>
+<script type="module">
+  // Share the already initialized MCP Apps connection of the upstream app.
+  // A second SDK App/connect() would create a second initialization on that
+  // same channel. This small extension sends only the standard open-link RPC.
+  const nav = document.querySelector('#project-check-eureka-nav');
+  const link = nav.querySelector('a');
+  const feedback = nav.querySelector('[role="status"]');
+  const name = nav.querySelector('.pc-eureka-name');
+  const destination = 'https://eureka.patsnap.com/';
+  const isChinese = () => document.documentElement.lang.toLowerCase().startsWith('zh');
+  function localize() {
+    const chinese = isChinese();
+    nav.setAttribute('aria-label', chinese ? 'Eureka 项目检查导航' : 'Eureka Project Check navigation');
+    link.setAttribute('aria-label', chinese ? 'Eureka 官网（新标签页打开）' : 'Eureka website (opens in a new tab)');
+    link.title = chinese ? '前往 eureka.patsnap.com' : 'Visit eureka.patsnap.com';
+    name.textContent = chinese ? '项目检查' : 'Project Check';
+  }
+  localize();
+  new MutationObserver(localize).observe(document.documentElement, {attributes: true, attributeFilter: ['lang']});
+  let pending = null;
+  function finish(error = '') {
+    if (pending) clearTimeout(pending.timer);
+    pending = null;
+    link.removeAttribute('aria-busy');
+    feedback.textContent = error;
+  }
+  window.addEventListener('message', event => {
+    if (event.source !== window.parent || event.data?.jsonrpc !== '2.0' || !pending || event.data.id !== pending.id) return;
+    const failed = event.data.error || event.data.result?.isError;
+    finish(failed ? (isChinese() ? '宿主未能打开链接，请重试。' : 'The host could not open the link. Try again.') : '');
+  });
+  link.addEventListener('click', event => {
+    if (window.parent === window) return; // Standalone browser preview.
+    event.preventDefault();
+    if (pending) return;
+    feedback.textContent = '';
+    const id = `project-check-eureka-${crypto.randomUUID()}`;
+    pending = {id, timer: setTimeout(() => finish(isChinese() ? '宿主未响应，请重试或在浏览器打开 Eureka。' : 'The host did not respond. Try again or open Eureka in your browser.'), 15000)};
+    link.setAttribute('aria-busy', 'true');
+    // Sandboxed MCP Apps can have an opaque origin. Only a fixed public URL
+    // is sent, and responses are checked against parent and this request id.
+    window.parent.postMessage({jsonrpc:'2.0', id, method:'ui/open-link', params:{url:destination}}, '*');
+  });
+</script>

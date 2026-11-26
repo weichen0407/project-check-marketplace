@@ -1,0 +1,44 @@
+<section id="project-check-trends" lang="$language" aria-labelledby="project-check-trends-title">
+  <header class="trends-heading">
+    <h1 id="project-check-trends-title">$title</h1>
+    <p class="text-small">$label · <time datetime="$date">$date</time></p>
+  </header>
+  <div class="trends-columns">
+$channels
+  </div>
+</section>
+<script type="application/json" id="project-check-trends-data">$snapshot</script>
+<style>
+  #project-check-trends {
+    --trends-secondary: color-mix(in srgb, var(--foreground, CanvasText) 40%, var(--muted-foreground, GrayText));
+    color: var(--foreground, CanvasText);
+    font-family: system-ui, sans-serif;
+    display: grid;
+    gap: calc(var(--font-size-base, 14px) * 1.3);
+  }
+  #project-check-trends .trends-heading { padding-inline-end: 90px; }
+  #project-check-trends .trends-heading p, #project-check-trends .trends-status { color: var(--trends-secondary); }
+  #project-check-trends .trends-heading p { margin-block-start: .45em; }
+  #project-check-trends .trends-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4em; }
+  #project-check-trends .trends-channel { min-width: 0; }
+  #project-check-trends .trends-channel h2 { margin-block-end: .4em; overflow-wrap: anywhere; }
+  #project-check-trends .trends-status { margin-block: 0 .65em; overflow-wrap: anywhere; }
+  #project-check-trends ul { list-style: none; margin: 0; padding: 0; }
+  #project-check-trends li { border-block-start: 1px solid var(--border, GrayText); }
+  #project-check-trends .trends-link {
+    color: inherit;
+    display: grid;
+    gap: .32em;
+    min-height: 44px;
+    padding-block: .8em;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+  #project-check-trends .trends-meta, #project-check-trends .trends-detail { color: var(--trends-secondary); }
+  #project-check-trends .trends-title { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .4em; font-weight: 500; }
+  #project-check-trends .trends-link:hover .trends-title,
+  #project-check-trends .trends-link:focus-visible .trends-title { text-decoration: underline; }
+  @media (max-width: 700px) {
+    #project-check-trends .trends-columns { grid-template-columns: minmax(0, 1fr); }
+  }
+</style>

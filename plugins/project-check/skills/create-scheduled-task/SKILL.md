@@ -1,6 +1,6 @@
 ---
 name: create-scheduled-task
-description: Create or manage Codex scheduled project checks and public patent monitoring. 使用 Codex Automations 创建、查看或调整项目检查的周期任务。用户要求“创建 Cron Job”“按计划检查项目”或“定期监测专利”时使用。
+description: Create or manage Codex scheduled checks, patent monitoring, or recurring trends-board refreshes. 使用 Codex Automations 创建、查看或调整项目检查的周期任务。用户要求“创建 Cron Job”“按计划检查项目”“定期监测专利”或“定期刷新趋势看板”时使用；一次性分析或草案不创建任务。
 ---
 
 # 创建定时任务
@@ -10,6 +10,10 @@ Follow the [request language rules](../project-check/references/response-languag
 宿主 Codex Automations 执行调度。插件提供调用指令和每轮检查方法。监测对象、
 项目、频率、执行时间、时区和通知偏好在创建时按实际请求传入，由宿主保存
 任务实例。插件清单、MCP 配置和分发包只记录可复用能力及服务入口。
+
+用户要求定期更新技术、专利和资讯看板时，先按[产品趋势看板](../trends-board/SKILL.md)
+确定来源范围、生成首版并取得持久路径，再使用本 Skill 的调度入口。将三栏更新和
+看板引用放在同一任务里。
 
 ## 何时创建
 
@@ -30,7 +34,7 @@ Follow the [request language rules](../project-check/references/response-languag
    依赖当前聊天上下文的普通周期跟进使用 `kind=heartbeat`。
 2. 创建前检查同名或同范围自动化，优先更新现有任务。创建、更新、
    暂停、恢复、查看和删除都使用调度工具的相应模式。
-3. 纯专利任务名称使用 `专利监测｜对象简名`（英文 `Patent Monitoring | Subject`）。
+3. 纯专利任务名称使用 `专利监测｜对象简名`（英文 `Patent Monitoring | Subject`）。看板任务名称使用 `对象简名 趋势看板`（英文 `Subject Trends Board`）。
    按用户要求设定启用状态和通知。调度表达式及通知设置通过宿主工具字段传入，
    任务提示词记录工作范围和交付物。
 4. 如果当前宿主没有 Codex 调度能力，明确说明未创建，并给出可复制的任务范围和
@@ -39,7 +43,8 @@ Follow the [request language rules](../project-check/references/response-languag
 ## 写入定时任务的提示词
 
 调度器会重复执行提示词。独立 Cron Job 的提示词应包含每轮能访问的项目路径、
-输入资料、核查范围和输出位置。需要比较上次结果时，使用该任务能访问的持久路径。
+输入资料、核查范围和输出位置。需要读取现有看板或上次结果时，使用项目下的
+持久路径。看板任务沿用[产品趋势看板](../trends-board/SKILL.md)的三栏和来源规则。
 
 Record the selected language in the task prompt. For English requests, use an English task name and prompt, and instruct every scheduled run to return its status and deliverables in English.
 

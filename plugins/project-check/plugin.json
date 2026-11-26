@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "project-check",
-  "version": "0.12.0",
-  "description": "Review engineering designs with R&D cost optimization, TRIZ innovation, case search, and reusable project-check workflows.",
+  "version": "0.14.0",
+  "description": "Review engineering projects for cost reduction and TRIZ innovation, and find relevant TRIZ cases. Explore technology news, build trends boards, schedule checks, and export reports.",
   "author": {
     "name": "weichen0407"
   },
@@ -11,7 +11,7 @@
       "interface": {
         "displayName": "Project Check · GitHub",
         "shortDescription": "Run engineering checks with cloud tools and guided workflows",
-        "longDescription": "Review engineering designs with cloud MCP tools, follow Project Check skills, and organize results into Markdown or HTML reports. Cost optimization and TRIZ tools provide their native interactive pages.",
+        "longDescription": "Review an engineering proposal using R&D Cost Optimization, TRIZ Innovation, and the TRIZ Case Library. Use the built-in Technology Discovery app to save product profiles and assess selected news. Build a trends board with links to technology, patents, and news, or schedule recurring checks in Codex. Export findings in Markdown, HTML, or Word. Reports and the Technology Discovery app support English and Chinese.",
         "developerName": "weichen0407",
         "category": "Productivity",
         "brandColor": "#2563EB",
@@ -20,14 +20,16 @@
         "capabilities": [
           "Engineering project checks",
           "R&D cost optimization",
-          "TRIZ innovation and case search",
-          "Markdown and HTML reports",
-          "Codex scheduled checks"
+          "TRIZ innovation",
+          "Markdown, HTML, and Word reports",
+          "Codex scheduled checks",
+          "Product trends boards",
+          "Technology discovery and product fit"
         ],
         "defaultPrompt": [
-          "Use Project Check to review the engineering proposal in this conversation.",
-          "Use the TRIZ Case Library to list technical effect terms.",
-          "Turn the current findings into a Markdown report."
+          "Review the engineering proposal in this conversation.",
+          "Open Technology Discovery with fictional demo data.",
+          "Export the current findings to Word."
         ]
       }
     }

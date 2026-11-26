@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Trends Board"
+  short_description: "Create or refresh technology, patent, and news trends"
+  default_prompt: "Use $trends-board to create a technology, patent, and news trends board for my product."

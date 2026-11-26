@@ -1,19 +1,27 @@
 # Project Check Marketplace
 
-「项目检查」GitHub 版提供研发降本、TRIZ 创新和 TRIZ 案例库，以及综合项目检查、定时任务和 Markdown／HTML 阶段报告的 Skills。降本和 TRIZ 创新的云端服务提供原生交互页面，定时任务使用 Codex Scheduled。用户无需安装 Python。
+Project Check includes R&D cost optimization, TRIZ innovation and case search, Eureka navigation, the Technology Discovery App, trends boards, and Markdown, HTML, and Word export.
 
-## 安装
+## Install
 
-确认本机已安装 Codex CLI，并已用 Git 登录有此私有仓库访问权限的 GitHub 账号。
+Use a Codex version with plugin support and a GitHub account with access to this repository. For the complete plugin, install Python 3.11 or newer if it is missing. After installation, `python3 --version` should show an available Python command. The plugin prepares its own dependencies on first startup.
+
+Paste this into a Codex chat to let Codex perform installation:
+
+> Install Project Check from GitHub. Run `codex plugin marketplace add weichen0407/project-check-marketplace` and `codex plugin add project-check@project-check-marketplace`. Check that Python 3.11 or newer is installed. Tell me if I need to install it, then verify the Technology Discovery App in a new chat.
+
+The installation commands are:
 
 ```bash
 codex plugin marketplace add weichen0407/project-check-marketplace && codex plugin add project-check@project-check-marketplace
 ```
 
-安装后打开新的 Codex 聊天，选择 **Project Check · GitHub**，输入「用 TRIZ 案例库查询技术功效标准词」测试。
+Restart Codex after installing Python. Open a new chat, select **Project Check · GitHub**, and ask it to open Technology Discovery with fictional demo data.
 
-## 更新
+## Update
 
 ```bash
 codex plugin marketplace upgrade project-check-marketplace && codex plugin add project-check@project-check-marketplace
 ```
+
+Open a new chat after updating. Existing product profiles stay in the user data directory and are shared with earlier local Project Check versions.

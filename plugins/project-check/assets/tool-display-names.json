@@ -1,0 +1,46 @@
+{
+  "rd-cost": {
+    "display_name": "研发降本",
+    "tools": {
+      "readme": "使用流程说明",
+      "upload_file": "上传项目资料",
+      "map_component_costs": "系统成本分析",
+      "standardize_bom": "BOM 标准化",
+      "three_dimensional_cross_industry_benchmark": "跨业对标降本",
+      "three_dimensional_extreme_subtraction": "减法原则降本",
+      "three_dimensional_function_search": "功能搜索降本",
+      "three_dimensional_system_architecture_reconstruction": "系统架构重构降本",
+      "three_dimensional_material_selection": "材料选择降本",
+      "three_dimensional_manufacturing_process_selection": "制造工艺选择降本",
+      "three_dimensional_fastening_process_selection": "紧固工艺选择降本",
+      "triz_analyze_trimming": "组件裁剪分析",
+      "triz_retrieve_patents": "裁剪专利证据检索",
+      "triz_generate_solutions": "裁剪降本方案生成",
+      "value_engineering": "价值工程降本",
+      "first_principles": "第一性原理降本",
+      "evaluate_solutions": "降本方案评估",
+      "generate_report": "降本报告生成",
+      "generate_solution_image": "降本方案图片生成"
+    }
+  },
+  "triz": {
+    "display_name": "TRIZ 创新",
+    "tools": {
+      "readme": "使用流程说明",
+      "analyze_components": "组件功能分析",
+      "analyze_causal_chain": "因果链分析",
+      "search_solution_evidence": "技术证据检索",
+      "generate_concept_solutions": "概念方案生成",
+      "generate_solution_detail": "方案详情生成",
+      "read_export_image": "读取方案导出图片",
+      "export_file": "导出方案文件"
+    }
+  },
+  "triz-case-library": {
+    "display_name": "TRIZ 案例库",
+    "tools": {
+      "search_triz_case": "TRIZ 案例检索",
+      "list_triz_search_terms": "查询案例检索标准词"
+    }
+  }
+}

@@ -35,7 +35,7 @@ Apply the [request language rules](response-language.md). For English requests, 
 
 插件相关回答完成后，追加一句：
 
-**【项目检查插件】需要把当前已有结果整理成 Markdown 或 HTML 报告吗？**
+**【项目检查插件】需要把当前已有结果整理成文档吗？支持 Markdown、HTML、Word。**
 
 用户明确拒绝或要求暂时不再询问时，保持该偏好，直到用户重新提出。已经在
 本轮生成文档时，交付文件并推荐可继续补充／更新的内容，不再重复询问是否

@@ -15,7 +15,7 @@ Follow the [request language rules](../project-check/references/response-languag
 首条可见回复和本轮最终回复均以加粗的插件／MCP／工具展示名称开头。
 本场景的 MCP 展示名称为「研发降本」，如实区分准备调用、实际调用与未调用。
 
-使用 `rd-cost` MCP 运行研发降本流程。
+使用 `rd-cost` MCP（ai-fabric 的 deepcost-apps），不把 `triz` 创新 MCP 当作研发降本服务。
 从当前可见会话提取产品、成本目标、性能约束与最新修正，不发送无关历史。
 调用前说明当前场景、MCP 名称及要调用的工具；结束时汇总实际调用和失败项。
 
