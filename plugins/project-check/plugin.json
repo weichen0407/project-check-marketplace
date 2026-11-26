@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "project-check",
-  "version": "0.14.1",
+  "version": "0.14.2",
   "description": "Review engineering projects for cost reduction and TRIZ innovation, and find relevant TRIZ cases. Explore technology news, build trends boards, schedule checks, and export reports.",
   "author": {
     "name": "weichen0407"

@@ -16,7 +16,7 @@ The installation commands are:
 codex plugin marketplace add weichen0407/project-check-marketplace && codex plugin add project-check@project-check-marketplace
 ```
 
-Restart Codex after installing Python. Open a new chat, select **Project Check · GitHub**, and ask it to open Technology Discovery with fictional demo data.
+Restart Codex after installing Python. Open a new chat, select **Project Check · GitHub**, and ask it to open Technology Discovery with fictional demo data. If dependencies take longer than the first MCP startup, ask Codex to run `python3 scripts/run_mcp.py --prepare-only` from the installed Project Check plugin directory, then open a new chat.
 
 ## Update
 
