@@ -20,10 +20,22 @@ PYTHON_ERROR = (
 def interpreter():
     if sys.version_info >= (3, 11):
         return Path(sys.executable)
-    candidates = [(f"python3.{minor}",) for minor in (14, 13, 12, 11)]
+    versions = ("3.14", "3.13", "3.12", "3.11")
+    # Desktop-launched MCP processes can have a shorter PATH than the user's shell.
+    search_dirs = [os.environ.get("PATH") or os.defpath, str(Path.home() / ".local" / "bin")]
+    if sys.platform == "darwin":
+        search_dirs.extend(("/opt/homebrew/bin", "/usr/local/bin"))
+        for version in versions:
+            search_dirs.extend((
+                f"/Library/Frameworks/Python.framework/Versions/{version}/bin",
+                f"/opt/homebrew/opt/python@{version}/bin",
+                f"/usr/local/opt/python@{version}/bin",
+            ))
+    search_path = os.pathsep.join(search_dirs)
+    candidates = [(f"python{version}",) for version in versions]
     candidates.extend([("python",), ("py", "-3")])
     for command, *flags in candidates:
-        executable = shutil.which(command)
+        executable = shutil.which(command, path=search_path)
         if not executable:
             continue
         try:
