@@ -1,6 +1,6 @@
 ---
 name: create-scheduled-task
-description: Create or manage Codex scheduled project checks and public patent monitoring. 使用 Codex Automations 创建、查看或调整项目检查的周期任务。用户要求“创建 Cron Job”“按计划检查项目”或“定期监测专利”时使用。
+description: Create or manage Codex scheduled project checks, trend board refreshes, and public patent monitoring. 使用 Codex Automations 创建、查看或调整项目检查的周期任务。用户要求“创建 Cron Job”“按计划检查项目”、“定期监测专利”或“定时刷新趋势看板”时使用。
 ---
 
 # 创建定时任务
@@ -66,3 +66,5 @@ Record the selected language in the task prompt. For English requests, use an En
 只在调度工具返回成功后说明已创建或已更新，并列出用户可读的任务名称、频率、
 监测范围和首次运行语义。不要显示内部 RRULE。提醒用户可以继续要求暂停、恢复、
 改频率或删除；监测结果仍不是正式法律意见。
+
+定时刷新看板时，遵循[趋势看板](../trends-board/SKILL.md)。在任务提示词中记录可访问的工作区配置位置和已有看板标识。

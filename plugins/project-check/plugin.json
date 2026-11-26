@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "project-check",
-  "version": "0.12.0",
-  "description": "Review engineering designs with R&D cost optimization, TRIZ innovation, case search, and reusable project-check workflows.",
+  "version": "0.13.0",
+  "description": "Review engineering designs, discover technology, track trends, and export engineering findings.",
   "author": {
     "name": "weichen0407"
   },
@@ -11,7 +11,7 @@
       "interface": {
         "displayName": "Project Check · GitHub",
         "shortDescription": "Run engineering checks with cloud tools and guided workflows",
-        "longDescription": "Review engineering designs with cloud MCP tools, follow Project Check skills, and organize results into Markdown or HTML reports. Cost optimization and TRIZ tools provide their native interactive pages.",
+        "longDescription": "Run R&D cost optimization and TRIZ checks, explore technology in an interactive app, track trends, and organize findings into Markdown, HTML, or Word reports.",
         "developerName": "weichen0407",
         "category": "Productivity",
         "brandColor": "#2563EB",
@@ -21,13 +21,15 @@
           "Engineering project checks",
           "R&D cost optimization",
           "TRIZ innovation and case search",
-          "Markdown and HTML reports",
+          "Technology Discovery App",
+          "Technology, patent, and news trends",
+          "Markdown, HTML, and Word reports",
           "Codex scheduled checks"
         ],
         "defaultPrompt": [
           "Use Project Check to review the engineering proposal in this conversation.",
-          "Use the TRIZ Case Library to list technical effect terms.",
-          "Turn the current findings into a Markdown report."
+          "Open Technology Discovery with fictional demo data.",
+          "Export my current findings to Word."
         ]
       }
     }

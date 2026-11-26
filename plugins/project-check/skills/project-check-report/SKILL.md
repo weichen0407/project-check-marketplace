@@ -1,6 +1,6 @@
 ---
 name: project-check-report
-description: Turn existing engineering findings into a Markdown or HTML report in Chinese or English. 将项目检查工具结果、当前方案讨论和用户资料按模板整理成 Markdown 或 HTML 阶段报告。
+description: Turn existing engineering findings into a Markdown, HTML, or Word report in Chinese or English. 将项目检查工具结果、当前方案讨论和用户资料按模板整理成 Markdown、HTML 或 Word 阶段报告。
 ---
 
 # 项目检查报告
@@ -18,6 +18,10 @@ Follow the [request language rules](../project-check/references/response-languag
 - 用实际项目背景、阶段结论、工具结果、证据、限制、验证建议和调用记录替换占位符。移除空章节及其标题。Markdown 删除模板的 `report-block` 注释。HTML 对正文中的文本进行转义，空图片槽和空章节一起移除。
 - 按请求语言撰写报告，保留证据原文、来源链接和标识符。整理现有报告时不重跑分析。
 
-## 交付
+## Word 导出
+
+用户要求 Word 或 `.docx` 时，用 `triz` 服务的 `export_project_check_report`。把实际内容按对应语言的章节 ID 放进 `sections`，按请求传 `language`。默认文件名为 `project-check-report.docx`。需要自定义时传只含字母、数字、连字符或下划线的 `name`。工具覆盖报告的正文、使用过的分析和来源。交付时以工具返回的 `filename` 和 `download_url` 提供 Word 文件链接，说明有效期为一小时。下载过期后可以用原内容重新导出。
+
+## Markdown 和 HTML 交付
 
 用户需要文件时，用宿主的文件编辑能力在项目的可写目录中创建 Markdown 或 HTML 成品。文件名已存在时另存。交付前核对实际文件、正文语言、证据链接及未填充占位符。文件编辑不可用时，在聊天中提供 Markdown。

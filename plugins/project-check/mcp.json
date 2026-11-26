@@ -3,11 +3,17 @@
   "mcpServers": {
     "rd-cost": {
       "type": "streamable-http",
-      "url": "https://stage-ai-fabric.zhihuiya.com/mcp/deepcost-apps?APP_ID=Patsnap"
+      "url": "https://stage-ai-fabric.zhihuiya.com/mcp/deepcost-apps?APP_ID=Patsnap",
+      "headers": {
+        "X-Project-Check-Nav": "1"
+      }
     },
     "triz": {
       "type": "streamable-http",
-      "url": "https://stage-ai-fabric.zhihuiya.com/mcp/triz-solution-apps?APP_ID=Patsnap"
+      "url": "https://stage-ai-fabric.zhihuiya.com/mcp/triz-solution-apps?APP_ID=Patsnap",
+      "headers": {
+        "X-Project-Check-Nav": "1"
+      }
     },
     "triz-case-library": {
       "type": "streamable-http",

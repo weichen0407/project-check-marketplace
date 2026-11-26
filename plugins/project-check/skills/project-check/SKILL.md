@@ -9,7 +9,7 @@ Follow the [request language rules](references/response-language.md). For an Eng
 
 同时遵循[下一步建议与文档询问](references/continuation-and-reporting.md)：每次
 调用结束给出带「【项目检查插件】」的下一步建议，每轮回答末尾询问是否生成
-文档。用户同意时用[阶段报告](../project-check-report/SKILL.md)整理 Markdown 或 HTML。
+文档。用户同意时用[阶段报告](../project-check-report/SKILL.md)整理 Markdown、HTML 或 Word。
 
 进入本流程时先遵循[插件调用提示](references/call-disclosure.md)：第一条可见
 回复和本轮最终回复均以加粗的插件／MCP／工具展示名称开头，区分准备调用、
@@ -65,7 +65,7 @@ Follow the [request language rules](references/response-language.md). For an Eng
 按工具实际关联的资源展示原生 MCP Apps 页面，不能假定所有服务都有 UI。
 若宿主没有显示页面，则用工具的文本与结构化结果继续；不
 声称新建了统一结果页或保存了项目。当前检查进度保留在可见会话中；用户要求
-文档时按报告 Skill 将已有结果整理成 Markdown 或 HTML。
+文档时按报告 Skill 将已有结果整理成 Markdown、HTML 或 Word。
 
 上游失败时保留已取得结果，注明未完成项；不把失败或空结果当作通过检查。
 原页面的导出和图片辅助工具不作为模型必经步骤。
