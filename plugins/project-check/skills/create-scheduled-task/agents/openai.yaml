@@ -1,0 +1,4 @@
+interface:
+  display_name: "Schedule Project Checks"
+  short_description: "Schedule project checks or public patent monitoring"
+  default_prompt: "Use $create-scheduled-task to schedule a project check with the project, frequency, time, and time zone I provide."

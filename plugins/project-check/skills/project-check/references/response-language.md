@@ -1,0 +1,9 @@
+# Request language
+
+Use the language explicitly requested by the user. Otherwise use the language of the latest substantive request. If a short follow-up is ambiguous, keep the language established for the current workflow. For an English request, write all user-facing text in English, including questions, progress, tool disclosures, results, limitations, recommendations, report sections, and scheduled-run output. Use Chinese for a Chinese request. The host locale is only a fallback for an app opened without an explicit request language.
+
+- Use the matching report template and write report titles, sections, and status notes in the request language.
+- For automations, persist the chosen language in the task prompt. Use it for the task name, prompt, every run's output, reports, and confirmation.
+- For `rd-cost` and `triz`, pass the same `language="en"` or `language="cn"` on every call whose actual schema exposes that field. This includes baseline, solution and report calls. For other services, use only documented schema fields that control output language. If a workflow guide is returned in the deployment language, use it to plan the work and explain its relevant content in the user's language.
+- Keep tool IDs, field names, product identifiers, patent numbers, and source links unchanged. Explain upstream results in the request language and preserve the original source wording when quoting. Native upstream pages and files use the language supplied by their service.
+- For English disclosures use **Project Check**, **R&D Cost Optimization**, **TRIZ Innovation**, and **TRIZ Case Library** as applicable. Translate Chinese workflow examples and literal display phrases for English users. Introduce next-step suggestions with **[Project Check]** and use **Would you like me to turn these findings into a report?** when the workflow calls for the report question.

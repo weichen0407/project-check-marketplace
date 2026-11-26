@@ -1,0 +1,6 @@
+interface:
+  display_name: "TRIZ Case Library"
+  short_description: "Find TRIZ precedents for a technical problem"
+  default_prompt: "Use $triz-case-library to find precedents for the current technical problem."
+policy:
+  allow_implicit_invocation: true

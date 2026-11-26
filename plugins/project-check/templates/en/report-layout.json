@@ -1,0 +1,168 @@
+{
+  "language": "en",
+  "title": "Project Check Report",
+  "front": [
+    {
+      "id": "project_context",
+      "title": "Project Context and Review Scope"
+    },
+    {
+      "id": "conclusions",
+      "title": "Interim Conclusions"
+    }
+  ],
+  "groups": [
+    {
+      "id": "rd-cost",
+      "title": "R&D Cost Optimization",
+      "sections": [
+        {
+          "id": "rd-cost.readme",
+          "title": "Workflow Guide"
+        },
+        {
+          "id": "rd-cost.upload_file",
+          "title": "Upload Project Materials"
+        },
+        {
+          "id": "rd-cost.map_component_costs",
+          "title": "System Cost Analysis"
+        },
+        {
+          "id": "rd-cost.standardize_bom",
+          "title": "BOM Standardization"
+        },
+        {
+          "id": "rd-cost.three_dimensional_cross_industry_benchmark",
+          "title": "Cross-Industry Cost Benchmarking"
+        },
+        {
+          "id": "rd-cost.three_dimensional_extreme_subtraction",
+          "title": "Extreme Subtraction"
+        },
+        {
+          "id": "rd-cost.three_dimensional_function_search",
+          "title": "Function Search"
+        },
+        {
+          "id": "rd-cost.three_dimensional_system_architecture_reconstruction",
+          "title": "System Architecture Redesign"
+        },
+        {
+          "id": "rd-cost.three_dimensional_material_selection",
+          "title": "Material Selection"
+        },
+        {
+          "id": "rd-cost.three_dimensional_manufacturing_process_selection",
+          "title": "Manufacturing Process Selection"
+        },
+        {
+          "id": "rd-cost.three_dimensional_fastening_process_selection",
+          "title": "Fastening Process Selection"
+        },
+        {
+          "id": "rd-cost.triz_analyze_trimming",
+          "title": "Component Trimming Analysis"
+        },
+        {
+          "id": "rd-cost.triz_retrieve_patents",
+          "title": "Trimming Patent Evidence Search"
+        },
+        {
+          "id": "rd-cost.triz_generate_solutions",
+          "title": "Trimming Cost-Reduction Solution Generation"
+        },
+        {
+          "id": "rd-cost.value_engineering",
+          "title": "Value Engineering"
+        },
+        {
+          "id": "rd-cost.first_principles",
+          "title": "First-Principles Cost Reduction"
+        },
+        {
+          "id": "rd-cost.evaluate_solutions",
+          "title": "Cost-Reduction Solution Evaluation"
+        },
+        {
+          "id": "rd-cost.generate_report",
+          "title": "Cost-Reduction Report Generation"
+        },
+        {
+          "id": "rd-cost.generate_solution_image",
+          "title": "Cost-Reduction Solution Image Generation"
+        }
+      ]
+    },
+    {
+      "id": "triz",
+      "title": "TRIZ Innovation",
+      "sections": [
+        {
+          "id": "triz.readme",
+          "title": "Workflow Guide"
+        },
+        {
+          "id": "triz.analyze_components",
+          "title": "Component Function Analysis"
+        },
+        {
+          "id": "triz.analyze_causal_chain",
+          "title": "Causal Chain Analysis"
+        },
+        {
+          "id": "triz.search_solution_evidence",
+          "title": "Technical Evidence Search"
+        },
+        {
+          "id": "triz.generate_concept_solutions",
+          "title": "Concept Solution Generation"
+        },
+        {
+          "id": "triz.generate_solution_detail",
+          "title": "Solution Detail Generation"
+        },
+        {
+          "id": "triz.read_export_image",
+          "title": "Read Exported Solution Image"
+        },
+        {
+          "id": "triz.export_file",
+          "title": "Export Solution File"
+        }
+      ]
+    },
+    {
+      "id": "triz-case-library",
+      "title": "TRIZ Case Library",
+      "sections": [
+        {
+          "id": "triz-case-library.search_triz_case",
+          "title": "TRIZ Case Search"
+        },
+        {
+          "id": "triz-case-library.list_triz_search_terms",
+          "title": "List Standard Case Search Terms"
+        }
+      ]
+    }
+  ],
+  "back": [
+    {
+      "id": "evidence",
+      "title": "Evidence and Sources"
+    },
+    {
+      "id": "limitations",
+      "title": "Known Limitations and Failures"
+    },
+    {
+      "id": "next_actions",
+      "title": "Next Validation Steps and Actions"
+    },
+    {
+      "id": "tool_history",
+      "title": "Tool Call History"
+    }
+  ]
+}

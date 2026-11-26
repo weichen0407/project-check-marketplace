@@ -1,0 +1,6 @@
+interface:
+  display_name: "Project Check Report"
+  short_description: "Turn existing findings into a Markdown or HTML report"
+  default_prompt: "Use $project-check-report to turn the findings in this conversation into a report."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,71 @@
+{
+  "default": "standard",
+  "templates": [
+    {
+      "id": "standard",
+      "file": "project-check-report.html",
+      "name": {
+        "cn": "通用长文",
+        "en": "General Narrative"
+      },
+      "description": {
+        "cn": "单栏长文布局；题图在标题下方，正文按报告顺序纵向展开。",
+        "en": "A single-column narrative with a hero image below the title and a linear report flow."
+      },
+      "recommended_for": [
+        "general",
+        "mixed"
+      ]
+    },
+    {
+      "id": "triz-solution",
+      "file": "html-templates/triz-solution.html",
+      "name": {
+        "cn": "方案展示",
+        "en": "Solution Showcase"
+      },
+      "description": {
+        "cn": "标题区左右分栏放概况与方案图，核心方案居中，证据和行动并列。",
+        "en": "A split overview-and-diagram header, centered solution body, and parallel evidence/action panels."
+      },
+      "recommended_for": [
+        "triz",
+        "innovation",
+        "solution"
+      ]
+    },
+    {
+      "id": "cost-optimization",
+      "file": "html-templates/cost-optimization.html",
+      "name": {
+        "cn": "决策看板",
+        "en": "Decision Dashboard"
+      },
+      "description": {
+        "cn": "摘要与主图在顶部，核心分析占主栏，证据、限制和行动放侧栏。",
+        "en": "A summary-and-chart header with core analysis in the main column and evidence, limits, and actions in a side rail."
+      },
+      "recommended_for": [
+        "rd-cost",
+        "cost",
+        "value-engineering"
+      ]
+    },
+    {
+      "id": "evidence-dossier",
+      "file": "html-templates/evidence-dossier.html",
+      "name": {
+        "cn": "证据档案",
+        "en": "Evidence Dossier"
+      },
+      "description": {
+        "cn": "项目范围先行，证据文字与证据图并排，审查正文和结论行动分区。",
+        "en": "Scope first, evidence text beside an exhibit, followed by a dossier body and a separate conclusions/action zone."
+      },
+      "recommended_for": [
+        "evidence",
+        "sources"
+      ]
+    }
+  ]
+}

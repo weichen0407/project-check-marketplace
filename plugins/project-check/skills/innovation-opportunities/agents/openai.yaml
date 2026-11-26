@@ -1,0 +1,6 @@
+interface:
+  display_name: "Innovation Opportunities"
+  short_description: "Assess similar technologies and alternative designs"
+  default_prompt: "Use $innovation-opportunities to assess the proposed design."
+policy:
+  allow_implicit_invocation: true

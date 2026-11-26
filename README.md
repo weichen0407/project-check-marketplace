@@ -1,6 +1,6 @@
 # Project Check Marketplace
 
-「项目检查」GitHub 版提供研发降本、TRIZ 创新和 TRIZ 案例库。Codex 直接调用云端 MCP，用户无需安装 Python。
+「项目检查」GitHub 版提供研发降本、TRIZ 创新和 TRIZ 案例库，以及综合项目检查、定时任务和 Markdown／HTML 阶段报告的 Skills。降本和 TRIZ 创新的云端服务提供原生交互页面，定时任务使用 Codex Scheduled。用户无需安装 Python。
 
 ## 安装
 

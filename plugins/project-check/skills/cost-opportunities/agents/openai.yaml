@@ -1,0 +1,6 @@
+interface:
+  display_name: "Cost Reduction Opportunities"
+  short_description: "Find cost reductions while retaining performance"
+  default_prompt: "Use $cost-opportunities to find cost-reduction opportunities in the current design."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,168 @@
+{
+  "language": "cn",
+  "title": "项目检查报告",
+  "front": [
+    {
+      "id": "project_context",
+      "title": "项目背景与检查范围"
+    },
+    {
+      "id": "conclusions",
+      "title": "阶段结论"
+    }
+  ],
+  "groups": [
+    {
+      "id": "rd-cost",
+      "title": "研发降本",
+      "sections": [
+        {
+          "id": "rd-cost.readme",
+          "title": "使用流程说明"
+        },
+        {
+          "id": "rd-cost.upload_file",
+          "title": "上传项目资料"
+        },
+        {
+          "id": "rd-cost.map_component_costs",
+          "title": "系统成本分析"
+        },
+        {
+          "id": "rd-cost.standardize_bom",
+          "title": "BOM 标准化"
+        },
+        {
+          "id": "rd-cost.three_dimensional_cross_industry_benchmark",
+          "title": "跨业对标降本"
+        },
+        {
+          "id": "rd-cost.three_dimensional_extreme_subtraction",
+          "title": "减法原则降本"
+        },
+        {
+          "id": "rd-cost.three_dimensional_function_search",
+          "title": "功能搜索降本"
+        },
+        {
+          "id": "rd-cost.three_dimensional_system_architecture_reconstruction",
+          "title": "系统架构重构降本"
+        },
+        {
+          "id": "rd-cost.three_dimensional_material_selection",
+          "title": "材料选择降本"
+        },
+        {
+          "id": "rd-cost.three_dimensional_manufacturing_process_selection",
+          "title": "制造工艺选择降本"
+        },
+        {
+          "id": "rd-cost.three_dimensional_fastening_process_selection",
+          "title": "紧固工艺选择降本"
+        },
+        {
+          "id": "rd-cost.triz_analyze_trimming",
+          "title": "组件裁剪分析"
+        },
+        {
+          "id": "rd-cost.triz_retrieve_patents",
+          "title": "裁剪专利证据检索"
+        },
+        {
+          "id": "rd-cost.triz_generate_solutions",
+          "title": "裁剪降本方案生成"
+        },
+        {
+          "id": "rd-cost.value_engineering",
+          "title": "价值工程降本"
+        },
+        {
+          "id": "rd-cost.first_principles",
+          "title": "第一性原理降本"
+        },
+        {
+          "id": "rd-cost.evaluate_solutions",
+          "title": "降本方案评估"
+        },
+        {
+          "id": "rd-cost.generate_report",
+          "title": "降本报告生成"
+        },
+        {
+          "id": "rd-cost.generate_solution_image",
+          "title": "降本方案图片生成"
+        }
+      ]
+    },
+    {
+      "id": "triz",
+      "title": "TRIZ 创新",
+      "sections": [
+        {
+          "id": "triz.readme",
+          "title": "使用流程说明"
+        },
+        {
+          "id": "triz.analyze_components",
+          "title": "组件功能分析"
+        },
+        {
+          "id": "triz.analyze_causal_chain",
+          "title": "因果链分析"
+        },
+        {
+          "id": "triz.search_solution_evidence",
+          "title": "技术证据检索"
+        },
+        {
+          "id": "triz.generate_concept_solutions",
+          "title": "概念方案生成"
+        },
+        {
+          "id": "triz.generate_solution_detail",
+          "title": "方案详情生成"
+        },
+        {
+          "id": "triz.read_export_image",
+          "title": "读取方案导出图片"
+        },
+        {
+          "id": "triz.export_file",
+          "title": "导出方案文件"
+        }
+      ]
+    },
+    {
+      "id": "triz-case-library",
+      "title": "TRIZ 案例库",
+      "sections": [
+        {
+          "id": "triz-case-library.search_triz_case",
+          "title": "TRIZ 案例检索"
+        },
+        {
+          "id": "triz-case-library.list_triz_search_terms",
+          "title": "查询案例检索标准词"
+        }
+      ]
+    }
+  ],
+  "back": [
+    {
+      "id": "evidence",
+      "title": "证据与来源"
+    },
+    {
+      "id": "limitations",
+      "title": "已知限制与失败记录"
+    },
+    {
+      "id": "next_actions",
+      "title": "下一步验证与行动"
+    },
+    {
+      "id": "tool_history",
+      "title": "实际调用记录"
+    }
+  ]
+}

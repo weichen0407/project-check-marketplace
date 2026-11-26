@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "project-check",
-  "version": "0.11.1",
-  "description": "Connect Codex to Project Check cloud tools for R&D cost optimization, TRIZ innovation, and TRIZ case search.",
+  "version": "0.12.0",
+  "description": "Review engineering designs with R&D cost optimization, TRIZ innovation, case search, and reusable project-check workflows.",
   "author": {
     "name": "weichen0407"
   },
@@ -10,13 +10,25 @@
     "com.openai": {
       "interface": {
         "displayName": "Project Check · GitHub",
-        "shortDescription": "Review engineering costs and explore TRIZ solutions",
-        "longDescription": "Use the cloud MCP tools for R&D cost optimization, TRIZ innovation, and searching the TRIZ Case Library.",
+        "shortDescription": "Run engineering checks with cloud tools and guided workflows",
+        "longDescription": "Review engineering designs with cloud MCP tools, follow Project Check skills, and organize results into Markdown or HTML reports. Cost optimization and TRIZ tools provide their native interactive pages.",
         "developerName": "weichen0407",
         "category": "Productivity",
         "brandColor": "#2563EB",
         "composerIcon": "./assets/icon.svg",
-        "logo": "./assets/logo.svg"
+        "logo": "./assets/logo.svg",
+        "capabilities": [
+          "Engineering project checks",
+          "R&D cost optimization",
+          "TRIZ innovation and case search",
+          "Markdown and HTML reports",
+          "Codex scheduled checks"
+        ],
+        "defaultPrompt": [
+          "Use Project Check to review the engineering proposal in this conversation.",
+          "Use the TRIZ Case Library to list technical effect terms.",
+          "Turn the current findings into a Markdown report."
+        ]
       }
     }
   }

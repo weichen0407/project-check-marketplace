@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="report-template" content="evidence-dossier"><title>Project Check Report</title><style>
+
+*{box-sizing:border-box}body{margin:0;font:16px/1.7 system-ui,"PingFang SC",Arial,sans-serif}
+nav{padding:16px 28px;color:white;display:flex;justify-content:space-between;gap:24px}nav a{color:white;text-decoration:none}.template-name{opacity:.82}
+main{max-width:980px;margin:28px auto;padding:38px 52px}.report-hero{margin-bottom:22px;padding-bottom:18px}.eyebrow{margin:0 0 5px;font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+h1{font-size:32px;line-height:1.2;margin:0}h2{font-size:22px;margin-top:28px}h3{font-size:17px;margin-top:20px}.report-content{white-space:pre-wrap;overflow-wrap:anywhere;min-height:.7em}h1,h2,h3{break-after:avoid}
+.media-slot{margin:0;border:1px solid #cbd8d3;background:#f5f7f6;overflow:hidden}.media-slot img{display:block;width:100%;height:auto;max-height:460px;object-fit:cover}.media-slot figcaption{padding:9px 12px;color:#53665e;font-size:13px;border-top:1px solid #dce5e1}.layout-region:not(:has(section)):not(:has(figure)){display:none}
+@media(max-width:760px){main{margin:0;padding:26px 22px;border-radius:0}.report-hero{display:block}nav{padding:13px 18px}.layout-showcase-hero,.layout-support-grid,.layout-related,.layout-dashboard-summary,.layout-dashboard,.layout-dossier-evidence,.dossier-close{display:block}.media-slot{margin:18px 0}.dashboard-rail{margin-top:26px}.layout-showcase-hero .media-slot{position:static}}@media print{body{background:white}nav{display:none}main{padding:0;margin:0;max-width:none;box-shadow:none;border:0}.layout-showcase-hero .media-slot{position:static}@page{margin:18mm}}
+
+
+body{background:#eef2f1;color:#182824}nav{background:#20352d}main{background:#fff;border:1px solid #d2ddd8;box-shadow:0 18px 55px rgba(20,45,36,.09)}
+.report-hero{border-bottom:3px double #8da399}.eyebrow{color:#5b746a}h1{color:#20352d}h2{color:#294b3f;border-bottom:1px solid #b8c8c1;padding-bottom:6px}h3{color:#3e6255}.report-content{line-height:1.78}
+.dossier-scope{max-width:760px}.layout-dossier-evidence{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:30px;margin:28px 0;padding:22px 0;border-top:1px solid #cbd8d3;border-bottom:1px solid #cbd8d3}
+.dossier-primary{border-left:5px solid #55776a;padding-left:24px}.dossier-primary section:has(h3){padding:0 0 14px 16px;border-left:1px solid #cbd8d3}.dossier-close{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:34px}.dossier-close>div{background:#f5f7f6;padding:4px 20px 16px}
+
+</style></head><body class="template-evidence-dossier"><nav><a href="https://eureka.patsnap.com/" target="_blank" rel="noopener noreferrer">Eureka ↗</a><span>Project Check</span><span class="template-name">Evidence Dossier</span></nav>
+<main><header class="report-hero"><p class="eyebrow">Technical scope and evidence trail</p><h1>Project Check Report</h1></header>
+<div class="layout-region dossier-scope" data-region="scope"><section data-section="project_context"><h2>Project Context and Review Scope</h2><div class="report-content">{{project_context}}</div></section>
+<section data-section="conclusions"><h2>Interim Conclusions</h2><div class="report-content">{{conclusions}}</div></section></div>
+<div class="layout-dossier-evidence"><div class="layout-region" data-region="evidence"><section data-section="evidence"><h2>Evidence and Sources</h2><div class="report-content">{{evidence}}</div></section></div><figure class="media-slot" data-image-slot="hero"></figure></div>
+<div class="layout-region dossier-primary" data-region="review-body"><section data-section="rd-cost"><h2>R&amp;D Cost Optimization</h2></section>
+<section data-section="rd-cost.readme"><h3>Workflow Guide</h3><div class="report-content">{{rd-cost.readme}}</div></section>
+<section data-section="rd-cost.upload_file"><h3>Upload Project Materials</h3><div class="report-content">{{rd-cost.upload_file}}</div></section>
+<section data-section="rd-cost.map_component_costs"><h3>System Cost Analysis</h3><div class="report-content">{{rd-cost.map_component_costs}}</div></section>
+<section data-section="rd-cost.standardize_bom"><h3>BOM Standardization</h3><div class="report-content">{{rd-cost.standardize_bom}}</div></section>
+<section data-section="rd-cost.three_dimensional_cross_industry_benchmark"><h3>Cross-Industry Cost Benchmarking</h3><div class="report-content">{{rd-cost.three_dimensional_cross_industry_benchmark}}</div></section>
+<section data-section="rd-cost.three_dimensional_extreme_subtraction"><h3>Extreme Subtraction</h3><div class="report-content">{{rd-cost.three_dimensional_extreme_subtraction}}</div></section>
+<section data-section="rd-cost.three_dimensional_function_search"><h3>Function Search</h3><div class="report-content">{{rd-cost.three_dimensional_function_search}}</div></section>
+<section data-section="rd-cost.three_dimensional_system_architecture_reconstruction"><h3>System Architecture Redesign</h3><div class="report-content">{{rd-cost.three_dimensional_system_architecture_reconstruction}}</div></section>
+<section data-section="rd-cost.three_dimensional_material_selection"><h3>Material Selection</h3><div class="report-content">{{rd-cost.three_dimensional_material_selection}}</div></section>
+<section data-section="rd-cost.three_dimensional_manufacturing_process_selection"><h3>Manufacturing Process Selection</h3><div class="report-content">{{rd-cost.three_dimensional_manufacturing_process_selection}}</div></section>
+<section data-section="rd-cost.three_dimensional_fastening_process_selection"><h3>Fastening Process Selection</h3><div class="report-content">{{rd-cost.three_dimensional_fastening_process_selection}}</div></section>
+<section data-section="rd-cost.triz_analyze_trimming"><h3>Component Trimming Analysis</h3><div class="report-content">{{rd-cost.triz_analyze_trimming}}</div></section>
+<section data-section="rd-cost.triz_retrieve_patents"><h3>Trimming Patent Evidence Search</h3><div class="report-content">{{rd-cost.triz_retrieve_patents}}</div></section>
+<section data-section="rd-cost.triz_generate_solutions"><h3>Trimming Cost-Reduction Solution Generation</h3><div class="report-content">{{rd-cost.triz_generate_solutions}}</div></section>
+<section data-section="rd-cost.value_engineering"><h3>Value Engineering</h3><div class="report-content">{{rd-cost.value_engineering}}</div></section>
+<section data-section="rd-cost.first_principles"><h3>First-Principles Cost Reduction</h3><div class="report-content">{{rd-cost.first_principles}}</div></section>
+<section data-section="rd-cost.evaluate_solutions"><h3>Cost-Reduction Solution Evaluation</h3><div class="report-content">{{rd-cost.evaluate_solutions}}</div></section>
+<section data-section="rd-cost.generate_report"><h3>Cost-Reduction Report Generation</h3><div class="report-content">{{rd-cost.generate_report}}</div></section>
+<section data-section="rd-cost.generate_solution_image"><h3>Cost-Reduction Solution Image Generation</h3><div class="report-content">{{rd-cost.generate_solution_image}}</div></section>
+<section data-section="triz"><h2>TRIZ Innovation</h2></section>
+<section data-section="triz.readme"><h3>Workflow Guide</h3><div class="report-content">{{triz.readme}}</div></section>
+<section data-section="triz.analyze_components"><h3>Component Function Analysis</h3><div class="report-content">{{triz.analyze_components}}</div></section>
+<section data-section="triz.analyze_causal_chain"><h3>Causal Chain Analysis</h3><div class="report-content">{{triz.analyze_causal_chain}}</div></section>
+<section data-section="triz.search_solution_evidence"><h3>Technical Evidence Search</h3><div class="report-content">{{triz.search_solution_evidence}}</div></section>
+<section data-section="triz.generate_concept_solutions"><h3>Concept Solution Generation</h3><div class="report-content">{{triz.generate_concept_solutions}}</div></section>
+<section data-section="triz.generate_solution_detail"><h3>Solution Detail Generation</h3><div class="report-content">{{triz.generate_solution_detail}}</div></section>
+<section data-section="triz.read_export_image"><h3>Read Exported Solution Image</h3><div class="report-content">{{triz.read_export_image}}</div></section>
+<section data-section="triz.export_file"><h3>Export Solution File</h3><div class="report-content">{{triz.export_file}}</div></section>
+<section data-section="triz-case-library"><h2>TRIZ Case Library</h2></section>
+<section data-section="triz-case-library.search_triz_case"><h3>TRIZ Case Search</h3><div class="report-content">{{triz-case-library.search_triz_case}}</div></section>
+<section data-section="triz-case-library.list_triz_search_terms"><h3>List Standard Case Search Terms</h3><div class="report-content">{{triz-case-library.list_triz_search_terms}}</div></section></div>
+<div class="dossier-close"><div class="layout-region" data-region="conclusions-and-actions"><section data-section="limitations"><h2>Known Limitations and Failures</h2><div class="report-content">{{limitations}}</div></section>
+<section data-section="next_actions"><h2>Next Validation Steps and Actions</h2><div class="report-content">{{next_actions}}</div></section>
+<section data-section="tool_history"><h2>Tool Call History</h2><div class="report-content">{{tool_history}}</div></section></div><div><figure class="media-slot" data-image-slot="secondary"></figure></div></div>
+</main></body></html>

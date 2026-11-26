@@ -1,0 +1,6 @@
+interface:
+  display_name: "Project Check"
+  short_description: "Review cost and innovation in an engineering design"
+  default_prompt: "Use $project-check to review the engineering proposal in this conversation."
+policy:
+  allow_implicit_invocation: true
